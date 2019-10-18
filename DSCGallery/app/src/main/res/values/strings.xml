@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DSC Gallery App</string>
+    <string name="subtitle">We just build a really cool gallery, are you like it?</string>
+    <string name="title">Welcome Rych, glad to see you!</string>
+    <string name="image_content_description">The selected image</string>
+    <string name="image_caption">Caption: Developer Student Clubs on Stage</string>
+    <string name="image_title">This image is belong to DSC IT Del</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="gallery_title">Google DSC ITDel Gallery</string>
+</resources>
