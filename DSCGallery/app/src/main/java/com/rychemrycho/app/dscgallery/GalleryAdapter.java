@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 public class GalleryAdapter extends BaseAdapter {
     private Context mContext;
+    private Integer[] images;
 
     public GalleryAdapter(Context context) {
         mContext = context;
@@ -16,17 +17,21 @@ public class GalleryAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return idImages.length;
+        return images.length;
     }
 
     @Override
     public Object getItem(int i) {
-        return idImages[i];
+        return images[i];
     }
 
     @Override
     public long getItemId(int i) {
         return 0;
+    }
+
+    public void setImages(Integer[] images) {
+        this.images = images;
     }
 
     @Override
@@ -40,37 +45,7 @@ public class GalleryAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) view;
         }
-        imageView.setImageResource(idImages[i]);
+        imageView.setImageResource(images[i]);
         return imageView;
     }
-
-    private Integer[] idImages = {
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-
-            R.drawable.dsc_itdel_left,
-            R.drawable.dsc_itdel,
-            R.drawable.dsc_itdel_right,
-    };
 }
